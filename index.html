@@ -66,11 +66,7 @@
    <div class="item22">
         <div class="item221"><p class="font-bold text-4xl px-4 py-2">Does this sound familiar...</p></div>
         <div class="item222">
-            <div class="boxes bg-yellow-100" id="box4">
-                <p class="text-3xl text-red-600 pl-4 pt-4">&#128556;</p>
-                <p class="font-bold">You hit dead end in a negotiation</p>
-                <p>You get nervous,frazzled and frustrated,instead of staying calm and solution-oriented.</p>
-            </div>
+            
             
                  <div class="boxes bg-red-100" id="box1">
                     <p class="text-3xl text-red-600 pl-4 pt-4">&#128544;</p>
@@ -184,3 +180,19 @@
 
 </body>
 </html>
+
+<!--function interchangeBoxes() {
+    const tl = gsap.timeline();
+  
+    // Define the animations to move the boxes within the container
+    tl.to('.boxes', { x: '+=310', duration: 1 })
+     .to('.boxes', { x: '+=310', duration: 1 }, '-=1')
+      .to('.boxes', { x: '+=310', duration: 1 }, '-=1')
+      .to('.boxes', { x: '+=310', duration: 1 }, '-=1');
+  }
+  
+  // Call the function to start the animation
+  interchangeBoxes();
+  
+  // Set up a repeating loop to keep the animation going
+  gsap.delayedCall(2, interchangeBoxes); // Change the delay as needed-->
