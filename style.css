@@ -120,3 +120,19 @@
     margin-left: 200px;
     margin-top: 75px;
   }
+  .item3{
+    height: 600px;
+    width: 950px;
+    margin-left: 305px;
+    border-radius: 16px;
+    background-color: rgb(251, 222, 196);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .item5{
+    width: 950px;
+    margin-left: 305px;
+    height: 300px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
