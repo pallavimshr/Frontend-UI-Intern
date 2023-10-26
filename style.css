@@ -103,4 +103,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  
+  .item6{
+    height: 600px;
+    width: 950px;
+    margin-left: 305px;
+    border-radius: 16px;
+    background-color:rgb(206, 237, 247);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .innerbox{
+    background-color: white;
+    width: 500px;
+    height: 150px;
+    border-radius: 16px;
+    margin-left: 200px;
+    margin-top: 75px;
+  }
