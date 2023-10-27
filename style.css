@@ -134,13 +134,26 @@
   margin-left: 20%;
   margin-top: 10%;
 }
-.box7{
+
+.box8{
+  width: 70%;
+  height: 700px;
+  margin-left: 15%;
+  border-radius: 16px;
+  background-color:hsl(244, 47%, 87%) ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box9{
   width: 70%;
   height: 350px;
   margin-left: 15%;
   border-radius: 16px;
 }
-.spaces{
+.spaces ,.product{
   background-color:  rgb(251, 222, 196);
   border-radius: 8px;
 }
+
+
+
