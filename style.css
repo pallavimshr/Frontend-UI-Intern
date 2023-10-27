@@ -1,138 +1,132 @@
-.container{
-    
-    width: 950px;
-    height: 800px;
-    margin-left: 250px;
-    margin-top: 20px;
-   
-    border-radius: 2px;
-    position: relative;
-    
-}
-.inner{
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    height: 700px;
-    width: 890px;
-    background-color: white;
+
+.outerbox{
+  width: 100%;
+} 
+
+.box1{
+  height: 700px;
+  width: 70%;
+  border-radius: 16px;
+  margin-left: 15%;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  background-color: white;
 
 }
- 
- 
- .box2{
-    
-    margin: 0px 25px 25px 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color:  hsl(244, 47%, 87%);
-    
- }
- 
+
+
+
+.content{
+   display: grid;
+  border-radius: 16px;
+  grid-template-columns: 1fr 1fr;
+  background-color:  hsl(244, 47%, 87%);
+  
+}
+
 
 
 .item11{
-    display: grid;
-    grid-template-rows: 2fr 1fr;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
 .item111{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
 }
 .element2{
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 .item112 {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.item2{
-    background-color: white;
-    border-radius: 16px;
-    margin-top: 10px;
-    height: 600px;
-    width: 950px;
-    margin-left: 305px;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    
-    
+.box2{
+  
+      height: 700px;
+      width: 70%;
+      border-radius: 16px;
+      margin-left: 15%;
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      background-color: white;
 }
 .item21{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .item22{
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
 }
 .item222 {
-    display: flex;
-    overflow: hidden;
-  }
-  
+  display: flex;
+  overflow: hidden;
+}
+
 .boxes {
-    width: 300px;
-    height: 250px;
-    margin: 10px;
-  }
-.item4{
-    height: 600px;
-    width: 950px;
-    margin-left: 305px;
-    
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+}
+.box3{
+  height: 500px;
+      width: 70%;
+      border-radius: 16px;
+      margin-left: 15%;
+      border-radius: 16px;
+      background-color: rgb(251, 222, 196);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+.box4{
+  height: 600px;
+      width: 70%;
+      border-radius: 16px;
+      margin-left: 15%;
+      display: grid;
+  grid-template-rows: 1fr 3fr;
 }
 .fade-item {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .fade-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .item42{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .item6{
-    height: 600px;
-    width: 950px;
-    margin-left: 305px;
-    border-radius: 16px;
-    background-color:rgb(206, 237, 247);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-  .innerbox{
-    background-color: white;
-    width: 500px;
-    height: 150px;
-    border-radius: 16px;
-    margin-left: 200px;
-    margin-top: 75px;
-  }
-  .item3{
-    height: 600px;
-    width: 950px;
-    margin-left: 305px;
-    border-radius: 16px;
-    background-color: rgb(251, 222, 196);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .item5{
-    width: 950px;
-    margin-left: 305px;
-    height: 300px; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.item42{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.box5{
+  height: 300px;
+      width: 70%;
+      
+      margin-left: 15%;
+      display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+.box6{
+  height: 600px;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 16px;
+  background-color:rgb(206, 237, 247);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.innerbox{
+  background-color: white;
+  width: 50%;
+  height: 150px;
+  border-radius: 16px;
+  margin-left: 25%;
+  margin-top: 75px;
+}
