@@ -9,7 +9,7 @@
  2. CSS
  3. Tailwind CSS
  4. Greensock JS
-## Snapshots of the Website
+## Snapshots of the Webpage
 * ### Download from
 
    ![Screenshot](Download.png)
