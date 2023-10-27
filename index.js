@@ -20,20 +20,24 @@ moveBoxes();
 
 
 
-  //Fading items of list
- 
-  const fadeItems = document.querySelectorAll('.fade-item');
+const fadeItems = document.querySelectorAll('.fade-item');
 
-  function checkScroll() {
-    fadeItems.forEach((item) => {
-      const rect = item.getBoundingClientRect();
-      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-      if (rect.top <= viewportHeight * 0.8) {
-        item.classList.add('fade-in');
-      }
-    });
-  }
+function checkScroll() {
+  fadeItems.forEach((item) => {
+    const rect = item.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    if (rect.top <= viewportHeight * 0.75) {
+      item.classList.add('fade-in');
+    }
+  });
+}
+
+
 checkScroll();
+
+
+const scrollContainer = document.querySelector('.overflow-y-scroll');
+scrollContainer.addEventListener('scroll', checkScroll);
 
   // Get references to the box and the hidden anchor tag
 
