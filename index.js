@@ -1,13 +1,15 @@
+
+//Animation for flashcards
 function moveBoxes() {
   const tl = gsap.timeline({ repeat: -1 });
 
-  // Define the animation to move the inner box to the left
+  
   tl.to('.boxes', {
-    x: '-=840', // Move to the left (outer box width)
+    x: '-=840', 
     duration: 4,
     ease: 'linear',
     onComplete: function () {
-      // Reset the inner box to the right (original position)
+      
       gsap.set('.boxes', { x: 0 });
     },
   });
@@ -18,7 +20,7 @@ moveBoxes();
 
 
 
-  
+  //Fading items of list
  
   const fadeItems = document.querySelectorAll('.fade-item');
 
@@ -31,11 +33,30 @@ moveBoxes();
       }
     });
   }
+checkScroll();
 
-  // Initial check when the page loads
-  checkScroll();
+  // Get references to the box and the hidden anchor tag
 
-  // Add a scroll event listener to the container
-  const scrollContainer = document.querySelector('.overflow-y-scroll');
-  scrollContainer.addEventListener('scroll', checkScroll);
+const boxes = document.querySelectorAll('.spaces');
+const hiddenLinks = document.querySelectorAll('.hiddenlink');
 
+
+const timelines = [];
+
+for (let i = 0; i < boxes.length; i++) {
+  const box = boxes[i];
+  const hiddenLink = hiddenLinks[i];
+
+  const tl = gsap.timeline({ paused: true, reversed: true });
+  tl.to(hiddenLink, { duration: 0.3, display: 'block' });
+
+  box.addEventListener('mouseenter', () => {
+    tl.play();
+  });
+
+  box.addEventListener('mouseleave', () => {
+    tl.reverse();
+  });
+
+  timelines.push(tl);
+}

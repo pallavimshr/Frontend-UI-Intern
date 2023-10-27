@@ -134,3 +134,13 @@
   margin-left: 20%;
   margin-top: 10%;
 }
+.box7{
+  width: 70%;
+  height: 350px;
+  margin-left: 15%;
+  border-radius: 16px;
+}
+.spaces{
+  background-color:  rgb(251, 222, 196);
+  border-radius: 8px;
+}
